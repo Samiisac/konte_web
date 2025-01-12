@@ -28,7 +28,117 @@
     </header>
 
     <main>
+        <nav>
+            <ol>
+                <li><a href="index.html">Søk</a></li>
+                <li><a href="#">søke-resultater</a></li>
+                <li><a href="#">Romtype</a></li>
+                <li><a href="#">Fly</a></li>
+                <li><a href="#">Tilleggsvalg</a></li>
+            </ol>
+        </nav>
 
+        <section>
+            <h1>oppgi dine bestillingsopplysninger</h1>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Voksen 18+ Hovedbestiller</legend>
+                    <p>
+                        <label for="fornavn">Fornavn (i følge pass):</label>
+                        <input type="text" id="fornavn" name="fornavn" required>
+                    </p>
+                    <p>
+                        <label for="etternavn">Etternavn (i følge pass):</label>
+                        <input type="text" id="etternavn" name="etternavn" required>
+                    </p>
+                    <p>
+                        <label for="fødselsdato">Fødselsdato:</label>
+                    </p>
+                    <p>
+                        <select name="dag" id="dag">
+                            <option>DD</option>
+                        </select>
+                        <select name="måned" id="måned">
+                            <option>MM</option>
+                        </select>
+                        <select name="år" id="år">
+                            <option>ÅÅÅÅ</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Kjønn:</label>
+                        <input type="radio" id="kvinne" name="kjønn" value="kvinne">
+                        <label for="Kvinne">Kvinne</label>
+                        <input type="radio" id="mann" name="kjønn" value="mann">
+                        <label for="mann">Mann</label>
+                    </p>
+                    <p>
+                        <label for="epost">E-postadresse:</label>
+                        <input type="email" id="epost" name="epost" required>
+                    </p>
+                    <p>
+                        <label for="telefonnummer">Telefonnummer:</label>
+                        <input type="tel" id="telefonnummer" name="telefonnummer" required>
+                    </p>
+                    <p>
+                        <label for="gateadresse">Gateadresse:</label>
+                        <input type="text" id="gateadreese" name="gateadresse" required>
+                    </p>
+                    <p>
+                        <label for="postnummer">Postnummer:</label>
+                        <input type="text" id="postnummer" name="postnummer" required>
+                    </p>
+                    <p>
+                        <label for="poststed">Poststed</label>
+                        <input type="text" id="poststed" name="poststed" required>
+                    </p>
+                    <p>
+                        <label for="land">Land:</label>
+                        <select name="land" id="land" required>
+                            <option>Velg et land</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Voksen 18+</legend>
+                    <p>
+                        <label for="fornavn2">Fornavn (i følge pass):</label>
+                        <input type="text" id="etternavn2 " name="etternavn2" required>
+                    </p>
+                    <p>
+                        <label for="etternavn2">Etternavn (i følge pass):</label>
+                        <input type="text" id="etternavn2" name="etternavn2" required>
+                    </p>
+                    <p>
+                        <label for="fodselsdato2">Fødselsdato</label>
+                    </p>
+                    <p>
+                        <select name="dag2" id="dag2">
+                            <option>DD</option>
+                        </select>
+                        <select name="måned2" id="måned2">
+                            <option >MM</option>
+                        </select>
+                        <select name="år2" id="år2">
+                            <option value="ÅÅÅÅ"></option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>kjønn</label>
+                        <input type="radio" id="kvinne2" name="kjønn2" value="kvinne">
+                        <label for="kvinne2">Kvinne</label>
+                        <input type="radio" id="mann2" name="kjønn2" value="mann">
+                        <label for="mann2">Mann</label>
+                    </p>
+                </fieldset>
+
+                    <p>
+                        <button type="submit">Siste steg</button>
+                    </p>
+            </form>
+        </section>
     </main>
 
     <footer id="footer">
