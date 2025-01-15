@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside-Reisebyrå</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="icon/css/all.css">
-    <link rel="stylesheet" href="icon/css/brands.css">
-    <link rel="stylesheet" href="icon/css/solid.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../Ikoner/css/all.css">
+    <link rel="stylesheet" href="../Ikoner/css/brands.css">
+    <link rel="stylesheet" href="../Ikoner/css/solid.css">
     <script src="https://kit.fontawesome.com/f6f3061b9f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -15,11 +15,11 @@
 <body>
     <header>
         <section class="top-header">
-            <a href="index.html">
-                <img src="/BildeMappe/fav.png" alt="Logo">
+            <a href="../Eksamen/index.html">
+                <img src="../BildeMappe/fav.png" alt="Logo">
             </a>
             <nav class="nav-top">
-                <a href="order.html" class="Søk-ikon"><i class="fas fa-search"></i></a>
+                <a href="../Eksamen/order.html" class="Søk-ikon"><i class="fas fa-search"></i></a>
                 <a href="#" class="#">Opprett en konto</a>
                 <a href="#" class="#"><i class="fas fa-user"></i> Min side</a>
                 <i class="fa-solid fa-bars"></i>
@@ -29,7 +29,7 @@
 
         <nav class="nav-main">
             <a href="#tips-inspirasjon">Tips og inspirasjon</a>
-            <a href="hotell.html">Hotell</a>
+            <a href="../Eksamen/hotell.html">Hotell</a>
             <a href="https://www.norwegian.no" target="_blank">Fly</a>
             <a href="service-footer">Kontakt oss</a>
         </nav>
@@ -66,7 +66,7 @@
                 </select>
 
                 <label for="dato">Velg dato</label>
-                <input type="date" id="dato" name="dato" placeholder="mm/dd/yyyy">
+                <input type="date" id="dato" name="dato" >
 
                 <label for="antall">Antall reisende</label>
                 <input type="number" id="antall" min="1" placeholder="Antall reisende">
@@ -80,12 +80,13 @@
                 <p>Bestill sommerens beste uke</p>
                 <p>Fly + hotell, 7 dager</p>
                 <p>Fra kr 3298</p>
-                <a href="hotell.html">Bestill i dag</a>
+                <a href="../Eksamen/hotell.html">Bestill i dag</a>
             </article>
         </section>
 
         <section id="tips-inspirasjon">
             <article class="inspirasjon-kort">
+                <img src="../BildeMappe/beach-6514331_640.jpg" alt="Ukens-Deal">
                 <span class="tag">Ukens Deal!</span>
                 <h3>Greske favoritter</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -95,18 +96,28 @@
         
         <section class="tilbud">
             <article class="tilbud-kort">
+                <img src="../BildeMappe/beach-1836467_640.jpg" alt="Solskinnspriser">
                 <h3>Solskinnspriser - bestill i dag!</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 <a href="#">Fra kr 3500 <i class="fas fa-angle-double-right"></i></a>
             </article>
 
             <article class="tilbud-kort">
+                <img src="../BildeMappe/cathedral-427997_640.jpg" alt="Storbyferie"
                 <h3>Storbyferie</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 <a href="#">Les mer <i class="fas fa-angle-double-right"></i></a>
             </article>
 
             <article class="tilbud-kort">
+                <img src="../BildeMappe/building-7014904_640.jpg" alt="London"
+                <h3>Besøk påsefavoritten London</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <a href="#">Fra kr 2709 <i class="fas fa-angle-double-right"></i></a>
+            </article>
+
+            <article class="tilbud-kort">
+                <img src="../BildeMappe/ski-slope-3223709_640.jpg" alt="Skiferie">
                 <h3>Skiferie</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#">Se alle skistedene <i class="fas fa-angle-double-right"></i></a>
