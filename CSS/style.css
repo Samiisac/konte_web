@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
     color: #252525;
 }
+
 .top-header {
     display: flex;
     justify-content: space-between;
@@ -17,7 +18,7 @@ body {
 }
 
 .top-header img {
-    height: 25px;
+    height: 25px; 
 }
 
 .nav-top {
@@ -32,7 +33,7 @@ body {
 }
 
 .nav-top a span {
-    display: none;
+    display: none; 
 }
 
 .hero-section {
@@ -44,9 +45,10 @@ body {
         rgba(255,255,255,1) 100%
     ), url('../BildeMappe/sea-4768869_1920.jpg');
     background-size: cover;
-    background-position: center bottom;
-    min-height: 50vh;
+    background-position: center bottom; 
+    min-height: 50vh; 
 }
+
 
 @media (min-width: 768px) {
     .nav-top a span {
@@ -85,6 +87,7 @@ body {
     border-bottom: 2px solid #52d3f0;
 }
 
+
 .Form-booking {
     display: flex;
     flex-direction: column;
@@ -105,6 +108,7 @@ body {
     border-radius: 4px;
     background: white;
 }
+
 
 .inline-form {
     display: grid;
@@ -165,3 +169,211 @@ body {
     min-width: 250px;
 }
 
+.tips-inspirasjon {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tips-inspirasjon h2 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+#tips-inspirasjon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#tips-inspirasjon article {
+    width: 100%;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#tips-inspirasjon img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+#tips-inspirasjon h3 {
+    padding: 15px 15px 10px 15px;
+    font-size: 1.2rem;
+}
+
+#tips-inspirasjon p {
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+#tips-inspirasjon a {
+    display: block;
+    padding: 15px;
+    color: #1ca2c1;
+    text-decoration: none;
+}
+
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #52d3f0;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.tag.nyhet {
+    background: #019101;
+}
+
+#footer {
+    background-color: #252525;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+.flagg-footer {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.flagg-footer figure {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
+
+.flagg-footer img {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.flagg-footer figcaption {
+    color: white;
+    font-size: 0.9rem;
+}
+
+
+.betaling-footer {
+    grid-column: 1 / -1;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.betaling-footer h4 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-payment i {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: white;
+}
+
+.newsletter-footer {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.newsletter-footer h4 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.newsletter-footer form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    border-radius: 4px;
+    padding: 5px;
+    height: 40px;
+    border: 1px solid white;
+    max-width: 400px; 
+}
+
+.newsletter-footer form label {
+    display: none;
+}
+
+.newsletter-footer input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background: none;
+    font-size: 14px;
+    outline: none; 
+}
+
+.newsletter-footer button {
+    background-color: #ffc107;
+    color: #252525;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.newsletter-footer p {
+    margin-top: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+
+.service-social-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.service-footer h4,
+.SosialeMedier-footer h4 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.service-footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.SosialeMedier-footer a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.flagg-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+}

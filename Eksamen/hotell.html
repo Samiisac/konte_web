@@ -19,17 +19,24 @@
                 <img src="../BildeMappe/fav.png" alt="Logo">
             </a>
             <nav class="nav-top">
-                <a href="../Eksamen/order.html" class="Søk-ikon"><i class="fas fa-search"></i></a>
-                <a href="#">Opprett en konto</a>
-                <a href="#"><i class="fas fa-user"></i> Min side</a>
+                <a href="../Eksamen/order.html" class="Søk-ikon">
+                    <i class="fas fa-search"></i>
+                    <span>Søk</span>
+                </a>
+                <a href="#">
+                    <span>Opprett en konto</span>
+                </a>
+                <a href="#">
+                    <i class="fas fa-user"></i>
+                    <span>Min side</span>
+                </a>
                 <i class="fa-solid fa-bars"></i>
             </nav>
         </section>
     </header>
     
-
     <section class="galleri">
-        <img src="#" alt="hotell-bilde">
+        <img src="../BildeMappe/landscape-2016308_640.jpg" alt="hotell-bilde">
         <button class="galleri-venstre"><i class="fas fa-chevron-left"></i></button>
         <button class="galleri-høyre"><i class="fas fa-chevron-right"></i></button>
     </section>
@@ -60,18 +67,27 @@
         </section>
 
         <section id="kart">
-            <h2>utforsk området</h2>
-
+            <h2>Utforsk området</h2>
+            <div class="kart-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2024.123456789!2d11.35306!3d59.12944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641e6b123456789%3A0xabcdef123456789!2sH%C3%B8gskolen%20i%20%C3%98stfold!5e0!3m2!1sen!2sno!4v1611811234567!5m2!1sen!2sno"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
         </section>
 
         <section id="rom">
             <h2>Velg rom</h2>
-            <article class="rom-kart">
+            <article class="rom-kort">
                 <img src="../BildeMappe/beach-6514331_640.jpg" alt="Junior Suite">
                 <h3>Junior Suite</h3>
                 <p>Plass til 2 personer - Queen-size seng</p>
                 <p>Pris: kr 6789 for 3 netter</p>
-                <p> kr 2263 per natt</p>
+                <p>kr 2263 per natt</p>
                 <button>Velg rom</button>
             </article>
             <article class="rom-kort">
@@ -79,7 +95,7 @@
                 <h3>Junior Suite</h3>
                 <p>Plass til 2 personer - Queen-size seng</p>
                 <p>Pris: kr 6789 for 3 netter</p>
-                <p> kr 2263 per natt</p>
+                <p>kr 2263 per natt</p>
                 <button>Velg rom</button>
             </article>
             <article class="rom-kort">
@@ -87,7 +103,7 @@
                 <h3>Junior Suite</h3>
                 <p>Plass til 2 personer - Queen-size seng</p>
                 <p>Pris: kr 6789 for 3 netter</p>
-                <p> kr 2263 per natt</p>
+                <p>kr 2263 per natt</p>
                 <button>Velg rom</button>
             </article>
             <article class="rom-kort">
@@ -95,7 +111,7 @@
                 <h3>Junior Suite</h3>
                 <p>Plass til 2 personer - Queen-size seng</p>
                 <p>Pris: kr 6789 for 3 netter</p>
-                <p> kr 2263 per natt</p>
+                <p>kr 2263 per natt</p>
                 <button>Velg rom</button>
             </article>
         </section>
@@ -127,34 +143,39 @@
 
         <section class="betaling-footer">
             <section class="footer-payment">
-                <i class="fab fa-cc-visa" ></i> Visa
-                <i class="fab fa-cc-paypal" ></i> PayPal
-                <i class="fab fa-cc-apple-pay" ></i> Apple Pay
+                <h4>Betalingsmetoder</h4>
+                <i class="fab fa-cc-visa"></i> Visa
+                <i class="fab fa-cc-paypal"></i> PayPal
+                <i class="fab fa-cc-apple-pay"></i> Apple Pay
             </section>
         </section>
 
         <section class="newsletter-footer">
+            <h4>Nyheter & Tilbud</h4>
             <form action="#">
-                <label for="newsletter">Meld deg på nyhetsbrev her</label>
                 <input type="email" id="newsletter" name="newsletter" placeholder="ola@example.com">
-                <button type="submit">Send</button>
+                <button type="submit">SEND</button>
             </form>
             <p>Kjøp reisegavekort</p>
         </section>
 
+        <div class="service-social-container">
         <section class="service-footer">
-            <p>Spørsmål og Svar</p>
-            <p>Chat</p>
-            <p>Kontakt</p>
+            <h4>Kundeservice</h4>
+            <a href="#">Spørsmål og Svar</a>
+            <a href="#">Chat</a>
+            <a href="#">Kontakt</a>
         </section>
 
         <section class="SosialeMedier-footer">
+            <h4>Sosiale Medier</h4>
             <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
             <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
             <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
         </section>
+    </div>
     </footer>
 </body>
 </html>

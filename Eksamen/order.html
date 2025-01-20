@@ -1,201 +1,202 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside-Reisebyrå</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../Ikoner/css/all.css">
-    <link rel="stylesheet" href="../Ikoner/css/brands.css">
-    <link rel="stylesheet" href="../Ikoner/css/solid.css">
-    <script src="https://kit.fontawesome.com/f6f3061b9f.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-</head>
+    <!DOCTYPE html>
+    <html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forside-Reisebyrå</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../Ikoner/css/all.css">
+        <link rel="stylesheet" href="../Ikoner/css/brands.css">
+        <link rel="stylesheet" href="../Ikoner/css/solid.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-    <header>
-        <section class="top-header">
-            <a href="../Eksamen/index.html">
-                <img src="../BildeMappe/fav.png" alt="Logo">
-            </a>
-            <nav class="nav-top">
-                <a href="../Eksamen/order.html" class="Søk-ikon"><i class="fas fa-search"></i></a>
-                <a href="#" class="#">Opprett en konto</a>
-                <a href="#" class="#"><i class="fas fa-user"></i> Min side</a>
-                <i class="fa-solid fa-bars"></i>
-            </nav>
-        </section>
-    </header>
+    <body>
+        <header>
+            <section class="top-header">
+                <a href="../Eksamen/index.html">
+                    <img src="../BildeMappe/fav.png" alt="Logo">
+                </a>
+                <nav class="nav-top">
+                    <a href="../Eksamen/order.html" class="Søk-ikon">
+                        <i class="fas fa-search"></i><span>Søk</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-user"></i><span>Min side</span>
+                    </a>
+                    <button class="menu-toggle" aria-label="Open menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </section>
+        </header>
 
-    <main>
-        <nav>
-            <ol>
-                <li><a href="../Eksamen/index.html">Søk</a></li>
-                <li><a href="#">søke-resultater</a></li>
-                <li><a href="#">Romtype</a></li>
-                <li><a href="#">Fly</a></li>
-                <li><a href="#">Tilleggsvalg</a></li>
-            </ol>
+        <nav class="Nav-booking">
+            <a href="../Eksamen/index.html"><i class="fas fa-search"></i>Søk</a>
+            <a href="#"><i class="fas fa-list"></i>Søkeresultater</a>
+            <a href="#"><i class="fas fa-bed"></i>Rom</a>
+            <a href="https://www.norwegian.no" target="_blank"><i class="fas fa-plane"></i>Fly</a>
+            <a href="#"><i class="fas fa-plus-circle"></i>Tillegg</a>
+            <a href="#" class="active"><i class="fas fa-user"></i>OPPLYSNINGER</a>
+            <a href="#"><i class="fas fa-check-circle"></i>Bestill</a>
         </nav>
 
-        <section>
-            <h1>oppgi dine bestillingsopplysninger</h1>
-
-            <form action="#" method="post">
-
-                <fieldset>
-                    <legend>Voksen 18+ Hovedbestiller</legend>
-                    <p>
+        <main>
+            <section class="Seksjon-booking">
+                <h1>Oppgi dine bestillingsopplysninger</h1>
+                <form class="Form-booking" action="#" method="post">
+                    <fieldset>
+                        <legend>Voksen 18+ Hovedbestiller</legend>
                         <label for="fornavn">Fornavn (i følge pass):</label>
                         <input type="text" id="fornavn" name="fornavn" required>
-                    </p>
-                    <p>
+                        
                         <label for="etternavn">Etternavn (i følge pass):</label>
                         <input type="text" id="etternavn" name="etternavn" required>
-                    </p>
-                    <p>
+                        
                         <label for="dag">Fødselsdato:</label>
-                    </p>
-                    <p>
-                        <select name="dag" id="dag">
-                            <option>DD</option>
-                        </select>
-                        <select name="måned" id="måned">
-                            <option>MM</option>
-                        </select>
-                        <select name="år" id="år">
-                            <option>ÅÅÅÅ</option>
-                        </select>
-                    </p>
-                    <p>
+                        <div class="date-group">
+                            <select name="dag" id="dag">
+                                <option>DD</option>
+                            </select>
+                            <select name="måned" id="måned">
+                                <option>MM</option>
+                            </select>
+                            <select name="år" id="år">
+                                <option>ÅÅÅÅ</option>
+                            </select>
+                        </div>
+            
                         <label>Kjønn:</label>
-                        <input type="radio" id="kvinne" name="kjønn" value="kvinne">
-                        <label for="kvinne">Kvinne</label>
-                        <input type="radio" id="mann" name="kjønn" value="mann">
-                        <label for="mann">Mann</label>
-                    </p>
-                    <p>
+                        <div class="gender-group">
+                            <label class="radio-label">
+                                <input type="radio" name="kjønn" value="kvinne">
+                                Kvinne
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="kjønn" value="mann">
+                                Mann
+                            </label>
+                        </div>
+            
                         <label for="epost">E-postadresse:</label>
                         <input type="email" id="epost" name="epost" required>
-                    </p>
-                    <p>
+                        
                         <label for="telefonnummer">Telefonnummer:</label>
                         <input type="tel" id="telefonnummer" name="telefonnummer" required>
-                    </p>
-                    <p>
+                        
                         <label for="gateadresse">Gateadresse:</label>
                         <input type="text" id="gateadresse" name="gateadresse" required>
-                    </p>
-                    <p>
+                        
                         <label for="postnummer">Postnummer:</label>
                         <input type="text" id="postnummer" name="postnummer" required>
-                    </p>
-                    <p>
-                        <label for="poststed">Poststed</label>
+                        
+                        <label for="poststed">Poststed:</label>
                         <input type="text" id="poststed" name="poststed" required>
-                    </p>
-                    <p>
+                        
                         <label for="land">Land:</label>
                         <select name="land" id="land" required>
                             <option value="" disabled selected>Velg et land</option>
                         </select>
-                    </p>
-                </fieldset>
-                <fieldset>
-                    <legend>Voksen 18+</legend>
-                    <p>
+                    </fieldset>
+            
+                    <fieldset>
+                        <legend>Voksen 18+</legend>
                         <label for="fornavn2">Fornavn (i følge pass):</label>
                         <input type="text" id="fornavn2" name="fornavn2" required>
-                    </p>
-                    <p>
+                        
                         <label for="etternavn2">Etternavn (i følge pass):</label>
                         <input type="text" id="etternavn2" name="etternavn2" required>
-                    </p>
-                    <p>
-                        <label for="dato">Fødselsdato</label>
-                        <input type="date" id="dato" name="dato" required>
-                    </p>
-                    <p>
-                        <select name="dag2" id="dag2">
-                            <option>DD</option>
-                        </select>
-                        <select name="måned2" id="måned2">
-                            <option >MM</option>
-                        </select>
-                        <select name="år2" id="år2">
-                            <option value="ÅÅÅÅ">ÅÅÅÅ</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label>kjønn</label>
-                        <input type="radio" id="kvinne2" name="kjønn2" value="kvinne">
-                        <label for="kvinne2">Kvinne</label>
-                        <input type="radio" id="mann2" name="kjønn2" value="mann">
-                        <label for="mann2">Mann</label>
-                    </p>
-                </fieldset>
-
-                    <p>
-                        <button type="submit">Siste steg</button>
-                    </p>
-            </form>
-        </section>
-    </main>
-
-    <footer id="footer">
-        <section class="flagg-footer">
-            <figure>
-                <img src="../Flagg/norway.png" alt="Norge">
-                <figcaption>Norge</figcaption>
-            </figure>
-            <figure>
-                <img src="../Flagg/sweden.png" alt="Sverige">
-                <figcaption>Sverige</figcaption>
-            </figure>
-            <figure>
-                <img src="../Flagg/denmark.png" alt="Danmark">
-                <figcaption>Danmark</figcaption>
-            </figure>
-            <figure>
-                <img src="../Flagg/material.png" alt="Finland">
-                <figcaption>Finland</figcaption>
-            </figure>
-            <figure>
-                <img src="../Flagg/netherlands.png" alt="Nederland">
-                <figcaption>Nederland</figcaption>
-            </figure>
-        </section>
-
-        <section class="betaling-footer">
-            <section class="footer-payment">
-                <i class="fab fa-cc-visa" ></i> Visa
-                <i class="fab fa-cc-paypal" ></i> PayPal
-                <i class="fab fa-cc-apple-pay" ></i> Apple Pay
+                        
+                        <label for="dag2">Fødselsdato:</label>
+                        <div class="date-group">
+                            <select name="dag2" id="dag2">
+                                <option>DD</option>
+                            </select>
+                            <select name="måned2" id="måned2">
+                                <option>MM</option>
+                            </select>
+                            <select name="år2" id="år2">
+                                <option>ÅÅÅÅ</option>
+                            </select>
+                        </div>
+            
+                        <label>Kjønn:</label>
+                        <div class="gender-group">
+                            <label class="radio-label">
+                                <input type="radio" name="kjønn2" value="kvinne">
+                                Kvinne
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="kjønn2" value="mann">
+                                Mann
+                            </label>
+                        </div>
+                    </fieldset>
+            
+                    <button type="submit">Siste steg</button>
+                </form>
             </section>
-        </section>
+        </main>
 
-        <section class="newsletter-footer">
-            <form action="#">
-                <label for="newsletter">Meld deg på nyhetsbrev her</label>
-                <input type="email" id="newsletter" name="newsletter" placeholder="ola@example.com">
-                <button type="submit">Send</button>
-            </form>
-            <p>Kjøp reisegavekort</p>
-        </section>
+        <footer id="footer">
+            <section class="flagg-footer">
+                <figure>
+                    <img src="../Flagg/norway.png" alt="Norge">
+                    <figcaption>Norge</figcaption>
+                </figure>
+                <figure>
+                    <img src="../Flagg/sweden.png" alt="Sverige">
+                    <figcaption>Sverige</figcaption>
+                </figure>
+                <figure>
+                    <img src="../Flagg/denmark.png" alt="Danmark">
+                    <figcaption>Danmark</figcaption>
+                </figure>
+                <figure>
+                    <img src="../Flagg/material.png" alt="Finland">
+                    <figcaption>Finland</figcaption>
+                </figure>
+                <figure>
+                    <img src="../Flagg/netherlands.png" alt="Nederland">
+                    <figcaption>Nederland</figcaption>
+                </figure>
+            </section>
 
-        <section class="service-footer">
-            <p>Spørsmål og Svar</p>
-            <p>Chat</p>
-            <p>Kontakt</p>
-        </section>
+            <section class="betaling-footer">
+                <section class="footer-payment">
+                    <h4>Betalingsmetoder</h4>
+                    <i class="fab fa-cc-visa"></i> Visa
+                    <i class="fab fa-cc-paypal"></i> PayPal
+                    <i class="fab fa-cc-apple-pay"></i> Apple Pay
+                </section>
+            </section>
 
-        <section class="SosialeMedier-footer">
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
-            <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
-            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-        </section>
-    </footer>
-</body>
-</html>
+            <section class="newsletter-footer">
+                <h4>Nyheter & Tilbud</h4>
+                <form action="#">
+                    <input type="email" id="newsletter" name="newsletter" placeholder="ola@example.com">
+                    <button type="submit">SEND</button>
+                </form>
+                <p>Kjøp reisegavekort</p>
+            </section>
+
+            <div class="service-social-container">
+            <section class="service-footer">
+                <h4>Kundeservice</h4>
+                <a href="#">Spørsmål og Svar</a>
+                <a href="#">Chat</a>
+                <a href="#">Kontakt</a>
+            </section>
+
+            <section class="SosialeMedier-footer">
+                <h4>Sosiale Medier</h4>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+                <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </section>
+        </div>
+        </footer>
+    </body>
+    </html>
