@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bestilling</title>
+        <title>Bestilling - Reisebyrå</title>
         <link rel="stylesheet" href="../CSS/style.css">
         <link rel="stylesheet" href="../Ikoner/css/all.css">
         <link rel="stylesheet" href="../Ikoner/css/brands.css">
@@ -12,6 +12,7 @@
     </head>
 
     <body>
+        <div class="O-container">
         <header>
             <section class="top-header">
                 <a href="../Eksamen/index.html">
@@ -33,7 +34,7 @@
 
         <nav class="Nav-booking">
             <a href="../Eksamen/index.html"><i class="fas fa-search"></i>Søk</a>
-            <a href="#"><i class="fas fa-list"></i>Søkeresultater</a>
+            <a href="../Eksamen/hotell.html"><i class="fas fa-list"></i>Søkeresultater</a>
             <a href="#"><i class="fas fa-bed"></i>Rom</a>
             <a href="https://www.norwegian.no" target="_blank"><i class="fas fa-plane"></i>Fly</a>
             <a href="#"><i class="fas fa-plus-circle"></i>Tillegg</a>
@@ -47,94 +48,108 @@
                 <form class="Form-booking" action="#" method="post">
                     <fieldset>
                         <legend>Voksen 18+ Hovedbestiller</legend>
-                        <label for="fornavn">Fornavn (i følge pass):</label>
-                        <input type="text" id="fornavn" name="fornavn" required>
+                                    
+                        <label for="fornavn1">Fornavn (i følge pass):</label>
+                        <input type="text" class="fornavn" id="fornavn1" name="fornavn1" required>
                         
-                        <label for="etternavn">Etternavn (i følge pass):</label>
-                        <input type="text" id="etternavn" name="etternavn" required>
-                        
-                        <label for="dag">Fødselsdato:</label>
-                        <div class="date-group">
-                            <select name="dag" id="dag">
+                        <label for="etternavn1">Etternavn (i følge pass):</label>
+                        <input type="text" class="etternavn" id="etternavn1" name="etternavn1" required>
+            
+                        <fieldset class="date-group">
+                            <select class="dag" name="dag1" id="dag1">
                                 <option>DD</option>
                             </select>
-                            <select name="måned" id="måned">
+                            <select class="måned" name="måned1" id="måned1">
                                 <option>MM</option>
                             </select>
-                            <select name="år" id="år">
+                            <select class="år" name="år1" id="år1">
                                 <option>ÅÅÅÅ</option>
                             </select>
-                        </div>
+                        </fieldset>
             
                         <label>Kjønn:</label>
-                        <div class="gender-group">
+                        <fieldset class="gender-group">
                             <label class="radio-label">
-                                <input type="radio" name="kjønn" value="kvinne">
+                                <input type="radio" class="kjønn" id="kjønn1_kvinne" name="kjønn1" value="kvinne">
                                 Kvinne
                             </label>
                             <label class="radio-label">
-                                <input type="radio" name="kjønn" value="mann">
+                                <input type="radio" class="kjønn" id="kjønn1_mann" name="kjønn1" value="mann">
                                 Mann
                             </label>
-                        </div>
-            
-                        <label for="epost">E-postadresse:</label>
-                        <input type="email" id="epost" name="epost" required>
+                        </fieldset>
+                       
+                        <label for="epost1">E-postadresse:</label>
+                        <input type="email" class="epost" id="epost1" name="epost1" required>
+                      
+                        <label for="telefonnummer1">Telefonnummer:</label>
+                        <input type="tel" class="telefonnummer" id="telefonnummer1" name="telefonnummer1" required>
+                       
+                        <label for="gateadresse1">Gateadresse:</label>
+                        <input type="text" class="gateadresse" id="gateadresse1" name="gateadresse1" required>
                         
-                        <label for="telefonnummer">Telefonnummer:</label>
-                        <input type="tel" id="telefonnummer" name="telefonnummer" required>
+                        <label for="postnummer1">Postnummer:</label>
+                        <input type="text" class="postnummer" id="postnummer1" name="postnummer1" required>
                         
-                        <label for="gateadresse">Gateadresse:</label>
-                        <input type="text" id="gateadresse" name="gateadresse" required>
-                        
-                        <label for="postnummer">Postnummer:</label>
-                        <input type="text" id="postnummer" name="postnummer" required>
-                        
-                        <label for="poststed">Poststed:</label>
-                        <input type="text" id="poststed" name="poststed" required>
+                        <label for="poststed1">Poststed:</label>
+                        <input type="text" class="poststed" id="poststed1" name="poststed1" required>
                         
                         <label for="land">Land:</label>
-                        <select name="land" id="land" required>
+                        <select name="land" class="land" id="land" required>
                             <option value="" disabled selected>Velg et land</option>
                         </select>
                     </fieldset>
             
                     <fieldset>
                         <legend>Voksen 18+</legend>
+                        
                         <label for="fornavn2">Fornavn (i følge pass):</label>
-                        <input type="text" id="fornavn2" name="fornavn2" required>
+                        <input type="text" class="fornavn" id="fornavn2" name="fornavn2" required>
                         
                         <label for="etternavn2">Etternavn (i følge pass):</label>
-                        <input type="text" id="etternavn2" name="etternavn2" required>
-                        
-                        <label for="dag2">Fødselsdato:</label>
-                        <div class="date-group">
-                            <select name="dag2" id="dag2">
+                        <input type="text" class="etternavn" id="etternavn2" name="etternavn2" required>
+            
+                        <fieldset class="date-group">
+                            <select class="dag" name="dag2" id="dag2">
                                 <option>DD</option>
                             </select>
-                            <select name="måned2" id="måned2">
+                            <select class="måned" name="måned2" id="måned2">
                                 <option>MM</option>
                             </select>
-                            <select name="år2" id="år2">
+                            <select class="år" name="år2" id="år2">
                                 <option>ÅÅÅÅ</option>
                             </select>
-                        </div>
+                        </fieldset>
             
                         <label>Kjønn:</label>
-                        <div class="gender-group">
+                        <fieldset class="gender-group">
                             <label class="radio-label">
-                                <input type="radio" name="kjønn2" value="kvinne">
+                                <input type="radio" class="kjønn" id="kjønn2_kvinne" name="kjønn2" value="kvinne">
                                 Kvinne
                             </label>
                             <label class="radio-label">
-                                <input type="radio" name="kjønn2" value="mann">
+                                <input type="radio" class="kjønn" id="kjønn2_mann" name="kjønn2" value="mann">
                                 Mann
                             </label>
-                        </div>
+                        </fieldset>
                     </fieldset>
             
                     <button type="submit">Siste steg</button>
                 </form>
+            </section>
+            
+            <section class="booking-summary">
+                <img src="../BildeMappe/sea-4768869_1920.jpg" alt="Parga Beach">
+                <h3>Parga Beach</h3>
+                <ul>
+                    <li>Hellas, Parga</li>
+                    <li>Man 5 mai - man 12 mai 2025</li>
+                    <li>2 Voksne</li>
+                    <li>Deluxerom, Balkong og ikke spesifisert utsikt</li>
+                    <li>Frokostbuffé</li>
+                    <li>Oslo Lufthavn — Preveza</li>
+                    <li>22 003,-</li>
+                </ul>
             </section>
         </main>
 
@@ -186,6 +201,7 @@
                 <a href="#">Spørsmål og Svar</a>
                 <a href="#">Chat</a>
                 <a href="#">Kontakt</a>
+                <a href="../tilgjengelighetserklæring/tilgjengelighetserklæring_kEksamen.pdf">Tilgjengelighetserklæring</a>
             </section>
 
             <section class="SosialeMedier-footer">
@@ -198,5 +214,6 @@
             </section>
         </div>
         </footer>
+    </div>
     </body>
     </html>

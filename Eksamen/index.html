@@ -3,74 +3,69 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Forside-Reisebyrå</title>
+        <title>Forside - Reisebyrå</title>
         <link rel="stylesheet" href="../CSS/style.css">
         <link rel="stylesheet" href="../Ikoner/css/all.css">
         <link rel="stylesheet" href="../Ikoner/css/brands.css">
         <link rel="stylesheet" href="../Ikoner/css/solid.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     </head>
+
     <body>
         <div class="container">
-        <header>
-            <section class="top-header">
-                <a href="../Eksamen/index.html">
-                    <img src="../BildeMappe/fav.png" alt="Logo">
-                </a>
-                <nav class="nav-top">
-                    <a href="../Eksamen/order.html" class="Søk-ikon">
-                        <i class="fas fa-search"></i><span>Søk</span>
-                    </a>
+            <header>
+                <section class="top-header">
                     <a href="#">
-                        <i class="fas fa-user"></i><span>Min side</span>
+                        <img src="../BildeMappe/fav.png" alt="Logo">
                     </a>
-                    <button class="menu-toggle" aria-label="Open menu">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </nav>
-            </section>
-        </header>
+                    <nav class="nav-top">
+                        <a href="#" class="search-link">
+                            <i class="fas fa-search"></i> Søk
+                        </a>
+                        <a href="#" class="account-link">
+                            Opprett en konto
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-user"></i> Min side
+                        </a>
+                    </nav>
+                </section>
+            </header>
         
-        <section class="hero-section">
-            <article class="banner"></article>
             <section class="Seksjon-booking">
-            <nav class="Nav-booking">
-                <a href="#"><i class="fas fa-plane"></i> Fly + Hotell</a>
-                <a href="#"><i class="fas fa-plane"></i> Fly</a>
-                <a href="#"><i class="fas fa-city"></i> Storby</a>
-                <a href="#"><i class="fas fa-skiing"></i> Ski</a>
-                <a href="#"><i class="fas fa-mountain"></i> Kombinasjoner</a>
-            </nav>
-            <form action="#" method="post" class="Form-booking">
-                <label for="fra">Fra</label>
-                <select id="fra" name="fra">
-                    <option>Velg avreisested</option>
-                    <option value="Oslo">Oslo Lufthavn</option>
-                </select>
-
-                <label for="til">Til</label>
-                <select id="til" name="til">
-                    <option>Velg destinasjon</option>
-                    <option value="Albania">Albania</option>
-                </select>
-
-                <fieldset class="inline-form">
-                    <label for="reise">Reiselengde</label>
-                    <select id="reise" name="reise">
-                        <option>Velg reiselengde</option>
-                        <option value="1 uke">Mindre enn 1 uke</option>
+                <nav class="Nav-booking">
+                    <a href="#" class="active"><i class="fas fa-plane"></i> Fly + Hotell</a>
+                    <a href="#"><i class="fas fa-plane"></i> Fly</a>
+                    <a href="#"><i class="fas fa-city"></i> Storby</a>
+                    <a href="#"><i class="fas fa-skiing"></i> Ski</a>
+                    <a href="#"><i class="fas fa-mountain"></i> Kombinasjonsreiser</a>
+                </nav>
+                <form action="#" method="post" class="Form-booking">
+                    <label for="fra">Fra</label>
+                    <select id="fra" name="fra">
+                        <option>Oslo Lufthavn</option>
                     </select>
-                    
-                    <label for="dato">Velg dato</label>
-                    <input type="date" id="dato" name="dato">
-                </fieldset>
-
-                <label for="antall">Antall reisende</label>
-                <input type="number" id="antall" min="1" placeholder="Antall reisende">
-                <button type="submit">Søk</button>
-            </form>
-        </section>
-    </section>
+            
+                    <label for="til">Til</label>
+                    <select id="til" name="til">
+                        <option>Albania</option>
+                    </select>
+            
+                    <fieldset class="i-form">
+                        <label for="reise">Reiselengde</label>
+                        <select id="reise" name="reise">
+                            <option>Mindre enn 1 uke</option>
+                        </select>
+                        
+                        <label for="dato">Velg dato</label>
+                        <input type="date" id="dato" name="dato">
+                    </fieldset>
+            
+                    <label for="antall">Antall reisende</label>
+                    <input type="number" id="antall" min="1" value="2">
+                    <button type="submit">Søk</button>
+                </form>
+            </section>
 
         <section class="kampange">
             <article class="kampanje-Innhold">
@@ -81,8 +76,7 @@
             </article>
         </section>
 
-        <section class="offers">
-            <h2>Tilbud</h2>
+        <section class="offers">        
             <article class="offer-card">
                 <h3>Ukens tilbud</h3>
                 <i class="fas fa-chevron-right"></i>
@@ -105,37 +99,30 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#">Fra kr 3970 <i class="fas fa-angle-double-right"></i></a>
             </article>
-
-            <section class="tilbud">
-                <article class="tilbud-kort">
-                    <img src="../BildeMappe/beach-1836467_640.jpg" alt="Solskinnspriser">
-                    <h3>Solskinnspriser - bestill i dag!</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <a href="#">Fra kr 3500 <i class="fas fa-angle-double-right"></i></a>
-                </article>
-
-                <article class="tilbud-kort">
-                    <img src="../BildeMappe/cathedral-427997_640.jpg" alt="Storbyferie" >
-                    <h3>Storbyferie</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <a href="#">Les mer <i class="fas fa-angle-double-right"></i></a>
-                </article>
-
-                <article class="tilbud-kort">
-                    <img src="../BildeMappe/building-7014904_640.jpg" alt="London">
-                    <h3>Besøk påsefavoritten London</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <a href="#">Fra kr 2709 <i class="fas fa-angle-double-right"></i></a>
-                </article>
-
-                <article class="tilbud-kort">
-                    <img src="../BildeMappe/ski-slope-3223709_640.jpg" alt="Skiferie">
-                    <h3>Skiferie</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#">Se alle skistedene <i class="fas fa-angle-double-right"></i></a>
-                </article>
-            </section>
-
+            <article class="inspirasjon-kort">
+                <img src="../BildeMappe/beach-1836467_640.jpg" alt="Solskinnspriser">
+                <h3>Solskinnspriser - bestill i dag!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <a href="#">Fra kr 3500 <i class="fas fa-angle-double-right"></i></a>
+            </article>
+            <article class="inspirasjon-kort">
+                <img src="../BildeMappe/cathedral-427997_640.jpg" alt="Storbyferie" >
+                <h3>Storbyferie</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <a href="#">Les mer <i class="fas fa-angle-double-right"></i></a>
+            </article>
+            <article class="inspirasjon-kort">
+                <img src="../BildeMappe/building-7014904_640.jpg" alt="London">
+                <h3>Besøk påsefavoritten London</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <a href="#">Fra kr 2709 <i class="fas fa-angle-double-right"></i></a>
+            </article>
+            <article class="inspirasjon-kort">
+                <img src="../BildeMappe/ski-slope-3223709_640.jpg" alt="Skiferie">
+                <h3>Skiferie</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Se alle skistedene <i class="fas fa-angle-double-right"></i></a>
+            </article>
             <article class="inspirasjon-kort">
                 <span class="tag">Nyhet</span>
                 <img src="../BildeMappe/beach-666122_640.jpg" alt="Skiferie">
@@ -144,9 +131,8 @@
                 <a href="#">Les mer <i class="fas fa-angle-double-right"></i></a>
             </article>
         </section>
-        </main>
         </div>
-
+        
         <footer id="footer">
             <section class="flagg-footer">
                 <figure>
@@ -195,6 +181,7 @@
                 <a href="#">Spørsmål og Svar</a>
                 <a href="#">Chat</a>
                 <a href="#">Kontakt</a>
+                <a href="../tilgjengelighetserklæring/tilgjengelighetserklæring_kEksamen.pdf">Tilgjengelighetserklæring</a>
             </section>
 
             <section class="SosialeMedier-footer">
