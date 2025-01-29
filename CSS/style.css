@@ -1662,3 +1662,37 @@ body {
 .O-container .booking-summary ul li {
     margin-bottom: 10px;
 }
+
+.velg-rom-knapp {
+    display: inline-block;
+    background-color: #52d3f0;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.velg-rom-knapp:hover {
+    background-color: #1ca2c1;
+}
+
+
+.rom-kort, .inspirasjon-kort, .offer-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.rom-kort:hover, .inspirasjon-kort:hover, .offer-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+.rom-kort:hover button, 
+.inspirasjon-kort:hover a, 
+.offer-card:hover i {
+    background-color: #52d3f0; 
+    color: white;   
+}
+
